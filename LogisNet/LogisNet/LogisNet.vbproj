@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEED1AB5-34E2-409E-992A-31138DC7A13E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LogisNet.My.MyApplication</StartupObject>
+    <RootNamespace>LogisNet</RootNamespace>
+    <AssemblyName>LogisNet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LogisNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LogisNet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6D983869E41364F8CAAE2EDF32237BA776F58692</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LogisNet_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Core, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Base, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=11.3035.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clsBodega.vb" />
+    <Compile Include="Clases\clsDestinatario.vb" />
+    <Compile Include="Clases\clsDetallePedido.vb" />
+    <Compile Include="Clases\clsDireccion.vb" />
+    <Compile Include="Clases\clsMovimiento.vb" />
+    <Compile Include="Clases\clsPedido.vb" />
+    <Compile Include="Clases\clsRegion.vb" />
+    <Compile Include="Clases\clsCliente.vb" />
+    <Compile Include="Clases\clsComuna.vb" />
+    <Compile Include="Clases\clsDetalleDocumento.vb" />
+    <Compile Include="Clases\clsIngreso.vb" />
+    <Compile Include="Clases\clsLocacion.vb" />
+    <Compile Include="Clases\clsProducto.vb" />
+    <Compile Include="Clases\clsSalida.vb" />
+    <Compile Include="Clases\clsStock.vb" />
+    <Compile Include="libreria.vb" />
+    <Compile Include="Negocio\ngDestinatario.vb" />
+    <Compile Include="Negocio\ngDirecciones.vb" />
+    <Compile Include="Negocio\ngGeneral.vb" />
+    <Compile Include="Clases\clsPedidoCliente.vb" />
+    <Compile Include="Negocio\ngBodega.vb" />
+    <Compile Include="Negocio\ngEmpresa.vb" />
+    <Compile Include="Negocio\ngIngreso.vb" />
+    <Compile Include="Negocio\ngLocacion.vb" />
+    <Compile Include="Negocio\ngPedido.vb" />
+    <Compile Include="Negocio\ngProducto.vb" />
+    <Compile Include="Negocio\ngSalida.vb" />
+    <Compile Include="Vistas\fBuscarCliente.Designer.vb">
+      <DependentUpon>fBuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fBuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fBuscarDestintario.Designer.vb">
+      <DependentUpon>fBuscarDestintario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fBuscarDestintario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fBuscarDireccion.Designer.vb">
+      <DependentUpon>fBuscarDireccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fBuscarDireccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fBuscarProducto.Designer.vb">
+      <DependentUpon>fBuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fBuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fDevolucion.Designer.vb">
+      <DependentUpon>fDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fLocaciones.Designer.vb">
+      <DependentUpon>fLocaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fLocaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fAcceso.Designer.vb">
+      <DependentUpon>fAcceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fAcceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fBodegas.Designer.vb">
+      <DependentUpon>fBodegas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fBodegas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fConexion.designer.vb">
+      <DependentUpon>fConexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fConexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fEmpresas.Designer.vb">
+      <DependentUpon>fEmpresas.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Vistas\fIngresoaBodega.Designer.vb">
+      <DependentUpon>fIngresoaBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fIngresoaBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fIngresoPedidos.Designer.vb">
+      <DependentUpon>fIngresoPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fIngresoPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fMenuPrincipal.Designer.vb">
+      <DependentUpon>fMenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fStockClienteBodega.Designer.vb">
+      <DependentUpon>fStockClienteBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fStockClienteBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fStockClienteDetallado.Designer.vb">
+      <DependentUpon>fStockClienteDetallado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fStockClienteDetallado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fStockProducto.Designer.vb">
+      <DependentUpon>fStockProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fStockProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fSalidadeBodega.Designer.vb">
+      <DependentUpon>fSalidadeBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fSalidadeBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\fTarjetaMovimientos.Designer.vb">
+      <DependentUpon>fTarjetaMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\fTarjetaMovimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vistas\fBuscarCliente.resx">
+      <DependentUpon>fBuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fBuscarDestintario.resx">
+      <DependentUpon>fBuscarDestintario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fBuscarDireccion.resx">
+      <DependentUpon>fBuscarDireccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fBuscarProducto.resx">
+      <DependentUpon>fBuscarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fDevolucion.resx">
+      <DependentUpon>fDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fLocaciones.resx">
+      <DependentUpon>fLocaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fAcceso.resx">
+      <DependentUpon>fAcceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fBodegas.resx">
+      <DependentUpon>fBodegas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fConexion.resx">
+      <DependentUpon>fConexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fEmpresas.resx">
+      <DependentUpon>fEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fIngresoaBodega.resx">
+      <DependentUpon>fIngresoaBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fIngresoPedidos.resx">
+      <DependentUpon>fIngresoPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fMenuPrincipal.resx">
+      <DependentUpon>fMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fStockClienteBodega.resx">
+      <DependentUpon>fStockClienteBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fStockClienteDetallado.resx">
+      <DependentUpon>fStockClienteDetallado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fStockProducto.resx">
+      <DependentUpon>fStockProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fSalidadeBodega.resx">
+      <DependentUpon>fSalidadeBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\fTarjetaMovimientos.resx">
+      <DependentUpon>fTarjetaMovimientos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LogisNet_ClaveTemporal.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Syncfusion.Compression.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Grouping.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Grouping.Windows">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Grouping.Windows.XmlSerializers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Windows">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grid.Windows.XmlSerializers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.GridConverter.Windows">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Grouping.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Shared.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.Shared.Windows">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Syncfusion.XlsIO.Base">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
